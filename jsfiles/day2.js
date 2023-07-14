@@ -7,5 +7,14 @@ http.createServer((req, res) => {
             throw err;
         console.log("File reading..");
     });
+    fs.readFileSync('text.txt', (err, data) => {
+        if (err)
+            throw err;
+        console.log("File reading 2");
+    });
+    //writeFile, writeFileSync
+    //appendFile, appendFileSync
+    //renameFile, renameFileSync
+    //unlinkFile, unlinkFileSync
     console.log("File already read");
 });
