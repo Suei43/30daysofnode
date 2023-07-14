@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const server = require("http");
 const port = 3000;
 const fs = require('fs');
@@ -24,4 +25,7 @@ server.createServer((req, res) => {
         return console.log(err);
     }
     console.log(`Server is running on port: ${port}`);
+});
+module.exports({
+    server, fs
 });
