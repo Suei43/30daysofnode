@@ -1,0 +1,10 @@
+ALL ABOUT NPM
+
+npm install - to install all package dependencies
+npm install -g <packagename>
+npm install <packagename>@versionnumber - for specific version download
+npm uninstall
+npm uninstall -g <packagename>
+npm install npm@lastest -g <install lastest npm>
+npm -v =to check npm version
+npm init - to make current dir an npm dir
