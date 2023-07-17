@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 50%;
+    height: 60%;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+h2{
+    text-align: center;
+}
+form>input{
+    padding: 10px;
+    outline: none;
+
+}
+#btn{
+    width: fit-content;
+    height: 50px;
+    background-color: rgb(53, 53, 205);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5%;
+    padding: 10px 25px;
+    cursor: pointer;
+}
