@@ -4,7 +4,6 @@ let app = express()
 let path = require('path')
 let mongoose = require('mongoose')
 let crypto = require('crypto')
-const { Schema } = require('mongoose')
 require('dotenv').config()
 
 
@@ -31,9 +30,6 @@ app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
 
 
 app.get('/',(req,res)=>{
-    if(req.method == 'post'){
-        console.log(req.body)
-    }
     res.sendFile(path.join(__dirname,'public','index.html'))
 })
 
