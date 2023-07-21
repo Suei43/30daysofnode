@@ -1,11 +1,11 @@
 export {}
-const server = require("http")
+const http = require("http")
 const port = 3000
 const fs = require('fs')
 
 console.log("Hello World");
 
-server.createServer((req: object,res: any)=>{
+http.createServer((req: object,res: any)=>{
     res.writeHead(200, {'Content-Type': 'text/html'});
     console.log("Server is running");
     if(req){
@@ -26,7 +26,4 @@ server.createServer((req: object,res: any)=>{
         return console.log(err)
     }
     console.log(`Server is running on port: ${port}`)
-})
-module.exports({
-    server,fs
 })
