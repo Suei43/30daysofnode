@@ -10,4 +10,4 @@ for (let i = 0; i < 12; i++) {
     debugger;
     console.log(i);
 }
-
+// To use the debugger for this file, run "npm --inspect" day23
